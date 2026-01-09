@@ -22,8 +22,17 @@ body{
     margin: 20px auto;
 }
 
+.time {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
 .session-counter{
-    margin-top: 50%;
+    margin-top: 10px;
     font-size: 1.2rem;
     color: #201710;
 }
@@ -65,4 +74,12 @@ button{
 
 button:hover{
     background: #684f3b;
+}
+
+.progress-ring_circle{
+    stroke-dasharray: 565.48;
+    stroke-dashoffset: 0;
+    transition: stroke-dashoffset 1s linear;
+    transition: rotate(-90deg);
+    transform-origin: 50% 50%;
 }
