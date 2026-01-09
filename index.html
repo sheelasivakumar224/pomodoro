@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>TickTock</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="app">
+            <h1>TickTock</h1>
+            <div class="timer">
+                <svg class="progress-ring" width="200" height="200">
+                    <circle class="process-ring_circle" stroke="white" r="90" cx="100" cy="100" stroke-width="8" fill="transparent">
+                </svg>
+                <div class="time" id="time-display">25:00</div>
+            </div>
+            <div class="session-counter">
+                Session completed: <span id="session-count">0</span>
+            </div>
+            <div class="top-controls">
+                <div class="music-controls">
+                    <span class="material-symbols-outlined icon" id="toggle-music">
+                        music_note
+                    </span>
+                    <audio id="bg-music" src="./assets/dandelions-music.mp3" loop preload="auto"></audio>
+                </div>
+                <div class="theme-toggle">
+                    <span class="material-symbols-outlined icon" id="toggle-theme">
+                        dark_mode
+                    </span>
+                </div>
+            </div>
+            <div class="controls">
+                <button id="start">Start</button>
+                <button id="pause">Pause</button>
+                <button id="reset">Reset</button>
+            </div>
+        </div>
+    </body>
+</html>
